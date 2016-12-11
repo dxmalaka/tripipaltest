@@ -1,0 +1,13 @@
+---
+pipeline: "workflows/php/CanaryReleaseStageAndApprovePromote/Jenkinsfile"
+buildName: "tripipaltest"
+codeReview: false
+links:
+  Git: "https://github.com/dxmalaka/tripipaltest.git"
+  Job: "http://jenkins.f8.35.165.36.82.xip.io/job/tripipaltest"
+  Production: "http://10.200.77.25:80/kubernetes/pods?namespace=f8-production"
+  Staging: "http://10.200.77.25:80/kubernetes/pods?namespace=f8-staging"
+environments:
+  Staging: "f8-staging"
+  Production: "f8-production"
+useLocalFlow: true
